@@ -1,0 +1,29 @@
+
+html {
+	background-color: #17931f;
+}
+
+p {
+	font-size: 30px;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	display: inline;
+}
+
+#luffy {
+	height: 150px;
+	width: 200px;
+}
+
+#box {
+	background: purple;	
+	height: 200px;
+	width: 400px;
+	text-align: center;
+	margin-left: 50px;
+}
