@@ -15,14 +15,15 @@
         -->
         {% include 'header.html' %}
 
-        <!-- Again another variable you would like to Flask & Jinja to load and change contents. -->
+        <p>{{ body_content }}</p>
+        
+        <!--
+            If statements can also work in templating, they work pretty much the exact same way as in any
+            other programming languages.
+        -->
 
-        {{ body_content }}
-
-        <p>
-            Loading all your variables in the return statement is simple, but there are cleaner ways to do it!
-            <br> <a href="/clean-variables">Cleaner Way to Load Variables!</a>
-        </p>
-
+        {% if show_link %}
+        <a href="clean-variables">Cleaner Way to Do Variables!</a>
+        {% endif %}
     </body>
 </html>

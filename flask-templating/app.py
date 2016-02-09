@@ -22,7 +22,9 @@ def home():
     return render_template('base.html', title="Showcasing Templating!",
                            body_content="This content will be loaded into the "
                                         "base.html file whose variable name is"
-                                        "\"body_content\"!")
+                                        "\"body_content\"!",
+                           show_link=True
+                           )
 
 
 @app.route('/clean-variables')
@@ -35,7 +37,8 @@ def cleaner_variable_loading():
                     "your variable names as the keys and variable assignments "
                     "as the dictionary values. Pass the dictionary into "
                     "the return statement of the render_template as a keyword "
-                    "argument, like this: **dictionary."
+                    "argument, like this: **dictionary.",
+                    "show_link": False
                     }
     return render_template('base.html', **content_dict)
 
