@@ -27,8 +27,15 @@ def home():
 def cleaner_variable_loading():
     # TODO: Show kwargs using a dict rather than getting every variable in HTML files and assigning it in the 
     # return statement.
-    pass
+    # Instead of assigning your variables in your return statement you can place them in a dictionary and use
+    # Python's keyword arguments to assign the variables.
+    content_dict = {"title":"Using a Dictionary Instead",
+                    "body_content":"Simply create a dictionary with all of your variable names as the keys "
+                                   "and variable assignments as the dictionary values. Pass the dictionary into"                                   " the return statement of the render_template as a keyword argument, like "
+                                   " this: **dictionary."
+                   }
+    return render_template('base.html', **content_dict)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=5000,debug=True)
