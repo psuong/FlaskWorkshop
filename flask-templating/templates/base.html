@@ -10,11 +10,14 @@
             The following line of code below allows the template engine (Jinja 2) to read contents
             from another HTML file and load it into the current file. (Think object orientated a bit here,
             you're taking the information from another "object" and loading it into the current "object.")
+
+            In order to include another html file follow the format below on line 16.
         -->
-        {% include header.html %}
+        {% include 'header.html' %}
+
+        <!-- Again another variable you would like to Flask & Jinja to load and change contents. -->
 
         {{ body_content }}
-
 
     </body>
 </html>
