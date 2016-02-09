@@ -18,10 +18,7 @@
 * add main.css file
 * targetting html tags and changing their attributes
 * color, background color, make the list inline, shrink the image and box the division
-
-
-
-
+* targetting elements with classes and ids, ie. navbar, footer, etc
 
 
 ### More info here
