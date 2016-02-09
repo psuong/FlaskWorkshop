@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+         <title> Another Flask Page </title>
+    </head>
+
+    <body>
+        <!--
+            The following line of code below allows the template engine (Jinja 2) to read contents
+            from another HTML file and load it into the current file. (Think object orientated a bit here,
+            you're taking the information from another "object" and loading it into the current "object.")
+        -->
+        {% include header.html %}
+
+        {{ body_content }}
+
+
+    </body>
+</html>
