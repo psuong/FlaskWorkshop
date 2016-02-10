@@ -20,7 +20,6 @@
 * color, background color, make the list inline, shrink the image and box the division
 * targetting elements with classes and ids, ie. navbar, footer, etc
 
-
 ### More info here
 * **DOCTYPE** http://stackoverflow.com/questions/414891/what-is-doctype?lq=1 
 * **Character encoding** https://www.w3.org/International/questions/qa-what-is-encoding

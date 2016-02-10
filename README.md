@@ -1,12 +1,9 @@
 # Flask Workshop
 
-## From discussion on Wednesday 02/03/16
-
 ### Timeline (expected time: 1hr 20mins)
 * Why Web Development? (5 mins)
 * Overview of HTML/CSS/JS (10 - 15 mins)
 * Flask (1 hr) 
-
 
 ## Why Web Development?
 
@@ -46,7 +43,7 @@ TODO...
 
 
 ## TODO's, break down the tasks as necessary
-- [ ] Add code snippets for HTML / CSS overview
-* [ ] Setting up Python environment instructions
-- [ ] Add Flask content
+* [x] Add code snippets for HTML / CSS overview
+* [x] Setting up Python environment instructions
+* [ ] Add Flask content
 
