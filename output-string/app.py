@@ -1,6 +1,4 @@
-# If you're not used to Python syntax, what the line below is stating is
-# from the flask file import a specific module called Flask.
-# For those used a C like language, think of it as the "using" keyword.
+# Import the Flask module from the flask file.
 from flask import Flask
 
 # The line below creates an object called app.
@@ -8,7 +6,7 @@ from flask import Flask
 # directories to look at.
 app = Flask(__name__)
 
-# Line 15 contains a decorator due to the @ symbol. So what are decorators?
+# Line 17 contains a decorator due to the @ symbol. So what are decorators?
 # Decorators are simply ways of extending a function's functionality without
 # directly having to change the function.
 # @app.route('/') has an innate functionality to provide the URL of a specific

@@ -16,7 +16,7 @@ def home():
 
     # Note: If you are missing a variable that needs to be assigned Flask
     # will spout an error in your terminal and on the webpage as long as
-    # debugging is enabled! (See line )
+    # debugging is enabled. (See line 47)
 
     # Modify the strings if you'd like to try it for yourself. :)
     return render_template('base.html', title="Showcasing Templating!",
