@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+         <title> Another Flask Page </title>
+    </head>
+
+    <body>
+        {#  The following 2 lines of code below allows you to "extend" from this page. Unlike includes, which
+            is much more component orientated (taking an object and loading it into another), extends allow
+            you to create a child template whose parent template is this file.  
+        #}
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
