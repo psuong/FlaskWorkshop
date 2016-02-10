@@ -30,6 +30,16 @@
 * Create interctaions for the page, events
 * Check out the Javascript workshop 
 
+## What is a framework, why use them?
+* HTML/CSS/JS creates static pages
+* how do web pages become interactive? need a webserver (another computer)
+* frameworks simplify development by providing 3 main things
+  * a url dispatcher
+  * a templating engine
+  * a object relational mapper (ORM)
+
+## Requests and HTTP
+* A primer on requests
 
 ## Flask
 
@@ -38,7 +48,16 @@
 * Explain the need of virtualenvs in Python development
 
 ### Finally some Flask
-TODO...
+* Hello world in Flask
+* Templating
+
+
+# Further reading
+* How the Web Works article series
+  * https://medium.freecodecamp.com/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c#.oyiwbpoc0
+  * https://medium.freecodecamp.com/how-the-web-works-part-ii-client-server-model-the-structure-of-a-web-application-735b4b6d76e3#.w1prmyecs 
+  * https://medium.freecodecamp.com/how-the-web-works-part-iii-http-rest-e61bc50fa0a#.36m601hep 
+* **What is a web framework?** https://www.jeffknupp.com/blog/2014/03/03/what-is-a-web-framework/
 
 
 
