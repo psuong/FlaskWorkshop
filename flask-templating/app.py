@@ -19,7 +19,11 @@ def home():
     # debugging is enabled. (See line 47)
 
     # Modify the strings if you'd like to try it for yourself. :)
-    return render_template('base.html', title="Showcasing Templating!",
+    return render_template('base.html',
+                           title="Showcasing Templating with Flask",
+                           block_description="Think of {% include \"<html_file"
+                                             ">}\" as a way to load \"objects\""
+                                             " into a webpage.",
                            body_content="This content will be loaded into the "
                                         "base.html file whose variable name is"
                                         "\"body_content\"!",
@@ -38,7 +42,8 @@ def cleaner_variable_loading():
                     "as the dictionary values. Pass the dictionary into "
                     "the return statement of the render_template as a keyword "
                     "argument, like this: **dictionary.",
-                    "show_link": False
+                    "show_link": False,
+                    "block_description": "Dictionaries are alternative ways."
                     }
     return render_template('base.html', **content_dict)
 

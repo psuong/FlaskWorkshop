@@ -13,7 +13,8 @@
 
             In order to include another html file follow the format below on line 16.
         -->
-        {% include 'header.html' %}
+
+        {% include "header.html" %}
 
         <p>{{ body_content }}</p>
         
@@ -23,7 +24,7 @@
         -->
 
         {% if show_link %}
-        <a href="clean-variables">Cleaner Way to Do Variables!</a>
+        <a href="clean-variables">Cleaner Way to Do Variable Assignment</a>
         {% endif %}
     </body>
 </html>
