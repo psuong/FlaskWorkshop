@@ -17,4 +17,4 @@ root/
 {% ... %} - Are statements, they don't get printed to the webpage.
 {# ... #} - They're comments, they don't get used in the template.
 
-View more at the [Jinja Documentation](jinja.pocoo.org/docs/dev/templates/).
+View more at the [Jinja Documentation](http://jinja.pocoo.org/docs/dev/templates/).
