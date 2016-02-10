@@ -13,8 +13,8 @@ root/
 
 ## Quick overview on Variables
 
-{{ ... }} - Are expressions that will be printed onto the webpage.
-{% ... %} - Are statements, they don't get printed to the webpage.
-{# ... #} - They're comments, they don't get used in the template.
+- {{ ... }} - Are expressions that will be printed onto the webpage.
+- {% ... %} - Are statements, they don't get printed to the webpage.
+- {# ... #} - They're comments, they don't get used in the template.
 
 View more at the [Jinja Documentation](http://jinja.pocoo.org/docs/dev/templates/).
