@@ -42,7 +42,10 @@ def greeting():
         #expecting a name and major
         name = request.args.get('name')
         major = request.args.get('major')
-        return page.format(name, major) 
+        if name and major:
+            return page.format(name, major) 
+        else:
+            return "Sorry, please pass your name and major"
 
 
 # The following if statement below lets Python know that this specific file is
