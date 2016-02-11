@@ -49,7 +49,7 @@
 
 ### Finally some Flask
 * Hello world in Flask
-* Templating
+* Templating | URL dispatching | no ORM
 
 
 # Further reading
@@ -63,6 +63,10 @@
 
 ## TODO's, break down the tasks as necessary
 * [x] Add code snippets for HTML / CSS overview
+* [x] Why use a web development framework?
+* [x] simple GET request example
 * [x] Setting up Python environment instructions
 * [ ] Add Flask content
+
+
 
