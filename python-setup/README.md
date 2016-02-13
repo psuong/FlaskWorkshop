@@ -24,9 +24,16 @@ which python #check path with
 deactivate #exit
 ```
 
+### Packages that you will need
+```sh
+pip install Flask
+pip install Flask-SQLAlchemy
+```
+
+
 > Remember to put your virtualenv in the ignore file on version control!
 
-### Advanced
+### To manage several virtual environments 
 * Install ```virtualenvwrapper``` to better manage virtual environments
 
 ### More info
