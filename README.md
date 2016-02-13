@@ -38,9 +38,6 @@
   * a templating engine
   * a object relational mapper (ORM)
 
-## Requests and HTTP
-* A primer on requests
-
 ## Flask
 
 ### Setting up a Python environment
@@ -50,6 +47,13 @@
 ### Finally some Flask
 * Hello world in Flask
 * Templating | URL dispatching | no ORM
+* Create a simple application list application (Pokemon themed)
+
+
+#TODOs
+* Do GET and POST request examples
+* Explain the use of PUT and DELETE
+
 
 
 # Further reading
@@ -64,9 +68,12 @@
 ## TODO's, break down the tasks as necessary
 * [x] Add code snippets for HTML / CSS overview
 * [x] Why use a web development framework?
-* [x] simple GET request example
 * [x] Setting up Python environment instructions
-* [ ] Add Flask content
+* [ ] Illustrate 3 main concepts, URL dispatching, templating and ORM usage
+* [ ] URL, seen in the decorator 
+* [ ] Templating, html with logic 
+* [ ] ORM, use flask-sqlalchemy
+
 
 
 
