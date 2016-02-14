@@ -20,8 +20,14 @@
 			Sorry, you ain't got no pokemons
 		{% endif %}
 
+		<h3>Form to add new pokemon</h3>
 
-		<!--display the pokemons-->
+		<!--form to add pokemons-->
+		<form action="/new_pokemon" method="POST">
+			<input type="text" name="name" value="Name">
+			<input type="text" name="element" value="Element">
+			<input type="submit" value="Add Pokemon">
+		</form>
 
 	</body>
 </html>
