@@ -46,6 +46,15 @@ def new_pokemon():
     return redirect('/pokemons')
 
 
+@app.route('/delete_pokemons', methods=['POST'])
+def delete_pokemons():
+
+    Pokemon.query.delete()
+    db.session.commit()
+    return redirect('/pokemons')
+
+
+
 if __name__ == '__main__':
     # always have debug true while developing
     app.run(debug=True)
