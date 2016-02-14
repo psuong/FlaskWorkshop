@@ -20,10 +20,21 @@ class Pokemon(db.Model):
         return '<Pokemon %r>' % self.name
 
 
-
 @app.route('/')
 def hello_world():
-    return render_template('index.html') 
+    return "hello, your first flask app" 
+
+# hits GET request by default
+@app.route('/pokemons')
+def pokemons():
+    return render_template("index.html")
+
+
+
+
 
 if __name__ == '__main__':
     app.run()
+
+
+

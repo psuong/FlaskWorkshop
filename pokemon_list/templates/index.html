@@ -6,6 +6,22 @@
 	</head>
 
 	<body>
-		hello you've rendered a template	
+		<h1>Pokemon list </h1>
+
+		{% if pokemons %}
+
+			<ul>
+				{% for pokemon in pokemons %}
+					<li> {{pokemon.name}} |	{{pokemon.element}}</li>	
+				{% endfor %}
+			</ul>
+
+		{% else %}
+			Sorry, you ain't got no pokemons
+		{% endif %}
+
+
+		<!--display the pokemons-->
+
 	</body>
 </html>
