@@ -27,14 +27,13 @@ def hello_world():
 # hits GET request by default
 @app.route('/pokemons')
 def pokemons():
-    return render_template("index.html")
+    # query db
+    pokemons = Pokemon.query.all()
 
-
-
+    return render_template("index.html", pokemons=pokemons)
 
 
 if __name__ == '__main__':
     app.run()
-
 
 
