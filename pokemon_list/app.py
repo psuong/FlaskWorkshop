@@ -9,8 +9,8 @@ db = SQLAlchemy(app)
 # import Pokemon class, add create some instances, add them and commit
 class Pokemon(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(20), unique=False)
-    element = db.Column(db.String(20), unique=True)
+    name = db.Column(db.String(20), unique=True)
+    element = db.Column(db.String(20), unique=False)
 
     def __init__(self, name, element):
         self.name = name 
@@ -53,14 +53,8 @@ def delete_pokemons():
     db.session.commit()
     return redirect('/pokemons')
 
-
-
 if __name__ == '__main__':
     # always have debug true while developing
     app.run(debug=True)
-
-
-
-
 
 
