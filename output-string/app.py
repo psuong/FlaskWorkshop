@@ -1,5 +1,5 @@
 # Import the Flask module from the flask file.
-from flask import Flask
+from flask import Flask, redirect, request
 
 # The line below creates an object called app.
 # The __name__ is used for single web apps! This lets Flask know which
@@ -17,6 +17,36 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return "Congratulations! You just launched a flask app!"
+
+
+#get request example
+@app.route('/greet', methods=['GET'])
+def greeting():
+
+    page = ''' 
+            <!DOCTYPE html>
+            <html lang="en-US">
+            <head>
+            <title>Greet student</title>
+            <meta charset="utf-8">
+            </head>
+            <body>
+            
+            <h1>Greeting human</h1>
+            <p> Your name is {0} and your major is {1} </p>
+            </body>
+            </html>
+            '''
+
+    if request.method == 'GET':
+        #expecting a name and major
+        name = request.args.get('name')
+        major = request.args.get('major')
+        if name and major:
+            return page.format(name, major) 
+        else:
+            return "Sorry, please pass your name and major"
+
 
 # The following if statement below lets Python know that this specific file is
 # the main file to execute.

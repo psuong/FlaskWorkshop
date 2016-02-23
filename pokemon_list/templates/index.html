@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Pokemon List</title>
+	</head>
+
+	<body>
+		<h1>Pokemon list </h1>
+
+		{% if pokemons %}
+
+			<ul>
+				{% for pokemon in pokemons %}
+					<li> {{pokemon.name}} |	{{pokemon.element}}</li>	
+				{% endfor %}
+			</ul>
+
+		{% else %}
+			Sorry, you ain't got no pokemons
+		{% endif %}
+
+		<h3>Form to add new pokemon</h3>
+
+		<!--form to add pokemons-->
+		<form action="/add_pokemon" method="POST">
+			<input type="text" name="name" value="Name">
+			<input type="text" name="element" value="Element">
+			<input type="submit" value="Add Pokemon">
+		</form>
+
+
+		<h3>Delete pokemons</h3>
+
+		<form action="/delete_pokemons" method="POST">
+			<input type="submit" value="Delete Pokemon">
+		</form>
+
+	</body>
+</html>
+
