@@ -1,5 +1,6 @@
 # Custom Folders
 [Vv]env
+[Ee]nv
 
 # Vim swap files
 *.swp
