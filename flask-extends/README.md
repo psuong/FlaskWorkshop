@@ -27,4 +27,4 @@ The short answer is, you'll use them simultaneously.
 
 **Includes** allows you to add a little snippet of HTMl into yourcurrent HTMl. These are useful for things like navigation bars, headers, or footers (when you know these parts of your HTML page won't be changing between pages).
 
-**Extends** allows you to override content between pages using the same template.
+**Extends** allows you to override content between pages using the same template. These are useful for creating web pages which use the same layout and structure but simply have different content (e.g. blog).
