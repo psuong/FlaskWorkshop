@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+         <title> Another Flask Page </title>
+    </head>
+
+    <body>
+        {# 
+            The following line of code below allows the template engine (Jinja 2) to read contents
+            from another HTML file and load it into the current file. (Think object orientated a bit here,
+            you're taking the information from another "object" and loading it into the current "object.")
+        #}
+
+        {% include "header.html" %}
+        
+        {# 
+            {% block body %] and {% endblock %} allow you to extend from this page using another html file.
+            Think inheritence here, the file that is extending off of this file, will inherit or gain all of the
+            properties and fields of the parent file (which is this current file). Therefore the structure of the
+            child html file will be the same as the parent file, while still providing you control on how to
+            manage the content.
+        #}
+        {% block body %}
+        {% endblock %}
+
+    </body>
+</html>

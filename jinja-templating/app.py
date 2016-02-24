@@ -9,17 +9,19 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    # The following return statement below renders the base.html file and
-    # locates each variable within the html files. Assign each variable a
-    # value and run the app. Your browser will display the contents
-    # you've written for each variable.
+    # Extends allows you to override the content within some statement
+    # variable in the HTML file. This allows you to create dynamically
+    # different pages wihtout having to create a new static html file.    
+    
+    # Assign each variable found within both base.html and content.html
+    # such that Flask can return a legitimate page to be rendered.
 
-    # Note: If you are missing a variable that needs to be assigned Flask
+    # Note: If you are missing a variable that needs to be assigned, Flask
     # will spout an error in your terminal and on the webpage as long as
-    # debugging is enabled. (See line 47)
+    # debugging is enabled. 
 
     # Modify the strings if you'd like to try it for yourself. :)
-    return render_template('base.html',
+    return render_template('content.html',
                            title="Showcasing Templating with Flask",
                            block_description="Think of {% include \"<html_file"
                                              ">}\" as a way to load \"objects\""
@@ -34,7 +36,7 @@ def home():
 @app.route('/clean-variables')
 def cleaner_variable_loading():
     # Instead of assigning your variables in your return statement you can
-    # place them in a dictionary and use# Python's keyword arguments to assign
+    # place them in a dictionary and use Python's keyword arguments to assign
     # the variables.
     content_dict = {"title": "Using a Dictionary Instead",
                     "body_content": "Simply create a dictionary with all of "
@@ -45,7 +47,7 @@ def cleaner_variable_loading():
                     "show_link": False,
                     "block_description": "Dictionaries are alternative ways."
                     }
-    return render_template('base.html', **content_dict)
+    return render_template('content.html', **content_dict)
 
 
 if __name__ == '__main__':
