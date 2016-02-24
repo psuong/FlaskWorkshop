@@ -17,11 +17,14 @@
 * #### Setting up Pip through the Command Prompt
   * Open up Command Prompt
   * Type the following: `setx PATH "%PATH%;C:\Python27\Scripts"`
-    *  This will add `pip` to your environment variables, so that you can use it on Command Prompt
+    *  This will add `pip` to your environment variables, so that you can use it on Command Prompt and install more modules!
 
 ### What is a Virtual Environment and why do we need them?
 * Global vs. Isolated
 * Different package versions for each project
+
+### Installing the Pip module 'virtualenv'    
+* To install `virtualenv`, simply write `pip install virtualenv` in your terminal (you may need root privileges!)
 
 # DEMO TIME
 
