@@ -22,7 +22,7 @@ class Pokemon(db.Model):
 
 @app.route('/')
 def hello_world():
-    return "hello, your first flask app" 
+    return render_template("base.html")
 
 # hits GET request by default
 @app.route('/pokemons')
