@@ -14,7 +14,7 @@
 ### Setting up pip on Windows
 * If the version of Python you downloaded is version 2.7.9 or greater, by default you'll get pip
 * A more convenient way to run pip, is to do it through your Command Prompt, although that requires some additional setup
-* #### Setting up Pip through the Command Prompt
+* Setting up Pip through the Command Prompt
   * Open up Command Prompt
   * Type the following: `setx PATH "%PATH%;C:\Python27\Scripts"`
     *  This will add `pip` to your environment variables, so that you can use it on Command Prompt and install more modules!
@@ -25,6 +25,16 @@
 
 ### Installing the Pip module 'virtualenv'    
 * To install `virtualenv`, simply write `pip install virtualenv` in your terminal (you may need root privileges!)
+
+### Creating and activating a virtualenv
+* Unix-based operating systems (OSX and Linux)
+  * In your project's directory simply type `virtualenv venv`, you will create a directory called `venv`.
+    * Note: You don't have to actually call your virtualenv "venv," you can call it whatever you'd like.
+  * To activate a virtualenv, simply write in your terminal `venv/source/bin/activate`; this will create an environment for you to work in through your terminal.
+
+* Windows operating systems
+  * The instructions to create a virtualenv on Windows is exactly the same as creating it on a Unix based operating system. Simply type `virtualenv venv` in your Command Prompt.
+  * Activating a virtualenv in Windows is a tad different than Unix. Instead of going into the `source` directory, go to the `Scripts` directory instead. For example: `venv\Scripts\activate.bat` would be the correct way to activate a virtualenv on Windows.
 
 # DEMO TIME
 
