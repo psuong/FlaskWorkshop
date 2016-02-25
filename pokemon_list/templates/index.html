@@ -1,67 +1,10 @@
 {% extends "base.html" %}
 
-{% block title %}Pokemon List{% endblock %}
+{% block title %}Home Page{% endblock %}
 
 {% block body %}
 
-	<div class="row marketing">
-
-		<!--3 columns, table, add form and delete form-->
-		<div class="col-md-5">
-			<h3>List of Pokemons</h4>
-
-			<!--table here-->
-			{% if pokemons %}
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<th>Pokemon Name</th>
-							<th>Element</th>
-						</tr>
-					</thead>
-
-					<tbody>
-						{% for pokemon in pokemons %}
-							<tr>
-								<td>{{pokemon.name}}</td>
-								<td>{{pokemon.element}}</td>
-							</tr>
-						{% endfor %}
-					</tbody>
-        </table>
-			{% else %}
-				Sorry, you ain't got no pokemons
-			{% endif %}
-		</div>
-
-		<div class="col-md-5">
-			<h3>Form to add new pokemon</h3>
-
-			<form action="/add_pokemon" method="POST">
-
-				<fieldset class="form-group">
-					<input type="text" class="form-control" name="name" placeholder="Pokemon name">
-				</fieldset>
-				<fieldset class="form-group">
-					<input type="text" class="form-control" name="element" placeholder="Element type">
-				</fieldset>
-				<input type="submit" class="btn btn-primary" value="Add Pokemon">
-
-			</form>
-
-			<hr>
-
-			<h3>Delete pokemons</h3>
-
-			<form action="/delete_pokemons" method="POST">
-				<fieldset class="form-group">
-					<input type="submit" class="btn btn-lg btn-danger" value="Delete Pokemon">
-				</fieldset>
-			</form>
-
-		</div>
-
-	</div>
+Nothing to see here, go here instead <a href="{{url_for("pokemons")}}">POKEMONS</a> 
 
 {% endblock %}
 

@@ -22,7 +22,7 @@ class Pokemon(db.Model):
 
 @app.route('/')
 def hello_world():
-    return render_template("base.html")
+    return render_template("index.html")
 
 # hits GET request by default
 @app.route('/pokemons')
@@ -30,7 +30,7 @@ def pokemons():
     # query db
     pokemons = Pokemon.query.all()
 
-    return render_template("index.html", pokemons=pokemons)
+    return render_template("list.html", pokemons=pokemons)
 
 
 @app.route('/add_pokemon', methods=['POST'])
