@@ -1,0 +1,19 @@
+{#
+    The declaration below states that this file, content.html, will be inheritting from the parent file,
+    base.html. Jinja will load up the structure of base.html and while also providing unique content relative 
+    to the current file.
+#}
+
+{% extends "base.html" %}
+
+{% block body %}
+
+        <p>{{ body_content }}</p>
+        
+        {# If statements can also work in templating, they work pretty much the exact same way as in any other programming language. #}
+
+        {% if show_link %}
+        <a href="clean-variables">Cleaner Way to Do Variable Assignment</a>
+        {% endif %}
+
+{% endblock %}
