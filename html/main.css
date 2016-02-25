@@ -15,6 +15,10 @@ ul li {
 	display: inline;
 }
 
+.blah {
+	background-color: black;
+}
+
 #luffy {
 	height: 150px;
 	width: 200px;
