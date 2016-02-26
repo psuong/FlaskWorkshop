@@ -38,6 +38,25 @@ def cleaner_variable_loading():
     # Instead of assigning your variables in your return statement you can
     # place them in a dictionary and use Python's keyword arguments to assign
     # the variables.
+
+    # So, a good question is why do this? Why not just stick with assigning
+    # variables in the return statement?
+    # Model View Controllers (MVC) are a software design pattern primarily
+    # used in any kind of software dealing with user interfaces.
+    
+    # Models are databases.
+    # Views deal with user interface.
+    # Controllers deal with the logic on updating views and models.
+
+    # This kind of design pattern will allow you to seperate your scripts
+    # and thus allow for an easier time debugging, as you can isolate where
+    # the error is taking place.
+
+    # If you're a beginner you want to practice just setting up a dictionary
+    # for Flask, but as you practice try splitting your scripts. Place the logic
+    # into another file and simply import that logic into your views (files that
+    # deal with any kind of routing, like this one). 
+    
     content_dict = {"title": "Using a Dictionary Instead",
                     "body_content": "Simply create a dictionary with all of "
                     "your variable names as the keys and variable assignments "
